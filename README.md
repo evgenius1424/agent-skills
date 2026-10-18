@@ -15,18 +15,26 @@ The codebase is a prompt. These skills make an agent keep improving it. Behavior
 
 ## Install
 
-Claude Code plugin:
+Add two entries to `~/.claude/settings.json`:
 
-```sh
-/plugin marketplace add evgenius1424/agent-skills
-/plugin install evgenius1424@evgenius1424
+```json
+{
+  "extraKnownMarketplaces": {
+    "evgenius1424": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/evgenius1424/agent-skills.git",
+        "ref": "main"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "evgenius1424@evgenius1424": true
+  }
+}
 ```
 
-Plain skills (any Agent Skills runtime):
-
-```sh
-npx skills add evgenius1424/agent-skills
-```
+No local clone needed — Claude Code pulls the skills from GitHub on the next session. If the file doesn't exist yet, create it at `~/.claude/settings.json` with just those two keys.
 
 To make it the default, add one line to `~/.claude/CLAUDE.md`:
 

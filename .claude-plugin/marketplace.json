@@ -1,0 +1,13 @@
+{
+  "name": "evgenius1424",
+  "owner": { "name": "evgenius1424" },
+  "description": "evgenius1424's agent skills.",
+  "plugins": [
+    {
+      "name": "evgenius1424",
+      "source": "./",
+      "description": "Intent routing, evidence-backed architecture decisions, and executable verification.",
+      "category": "engineering"
+    }
+  ]
+}

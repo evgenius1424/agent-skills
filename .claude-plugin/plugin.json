@@ -1,0 +1,16 @@
+{
+  "name": "evgenius1424",
+  "version": "0.1.0",
+  "description": "evgenius1424's engineering operating mode: intent routing, evidence-backed architecture decisions, and executable verification. The codebase is a prompt.",
+  "author": { "name": "evgenius1424" },
+  "license": "MIT",
+  "keywords": ["engineering", "architecture", "verification", "skills"],
+  "skills": [
+    "./skills/evgenius1424-mode",
+    "./skills/why",
+    "./skills/verify",
+    "./skills/audit",
+    "./skills/guard",
+    "./skills/learn"
+  ]
+}
